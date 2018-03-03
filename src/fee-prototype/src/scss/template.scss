@@ -1,0 +1,100 @@
+/////
+// IMPORTANT NOTE: Please don't modify these styles**
+
+// This style sheet is strictly for the home page of the toolkit.
+// It is NOT included in styles.scss,
+/////
+
+//Core
+@import "../../node_modules/normalize.scss/normalize";
+
+//Variables
+$main-font-family: "Lato", sans-serif;
+$container-width: 1000px;
+
+//Colors
+$wild-sand: #F5F5F5;
+$silver-chalice: #A7A7A7;
+$dove-gray: #6F6F6F;
+
+//Media sizes
+$screen-lg: 1200px;
+$screen-md: 922px;
+$screen-sm: 768px;
+$screen-xs: 576px;
+
+
+html,
+body {
+  font-family: $main-font-family;
+  font-size: 16px;
+  box-sizing: border-box;
+  background: $wild-sand;
+  -webkit-font-smoothing: antialiased;
+}
+
+* {
+  &::before,
+  &::after {
+    box-sizing: inherit;
+  }
+}
+
+// Global
+.container {
+  position: relative;
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  margin: 40px 0;
+  align-items: center;
+}
+
+.header__version {
+  font-size: 12px;
+  margin-top: 5px;
+  color: $silver-chalice;
+}
+
+.header__logo {
+  width: 250px;
+}
+
+// Sprint block/list
+.sprint-block__title {
+  font-size: 18px;
+}
+
+//////
+// Media queries for container
+/////
+@media (min-width: #{$screen-xs}) {
+  .container {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: #{$screen-sm}) {
+  .container {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: #{$screen-md}) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: #{$screen-lg}) {
+  .container {
+    max-width: 1140px;
+  }
+}

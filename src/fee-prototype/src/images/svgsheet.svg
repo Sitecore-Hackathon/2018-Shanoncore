@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><path id="a" d="M2.65 2L6 6.65 9.35 2H11L9.35 4.31 6 9 2.65 4.31 1 2z"/></defs><symbol id="angle-bg" viewBox="0 0 1280 7005">
+    <!-- Generator: Sketch 47 (45396) - http://www.bohemiancoding.com/sketch -->
+    <title>bg</title>
+    <desc>Created with Sketch.</desc>
+    
+    <g id="ASSETS---Repeating-BG" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Repeating-BG-Desktop" fill="#FFFFFF">
+            <path d="M1280,1162.45879 L1280,2324.96699 L0,2324.96699 L1279.44969,1162.4588 L0,2.27373675e-13 L1280,2.27373675e-13 L1280,1162.45879 Z M0,2324.96699 L1280,2324.96699 L1280,3487.97519 L0,2324.96699 Z M1280,4650.9834 L0,4650.9834 L0,3487.97519 L1280,4650.9834 Z M1280,4650.9834 L0,5813.9916 L0,4650.9834 L1280,4650.9834 Z M0,7005 L1280,5841.9918 L1280,7005 L0,7005 Z" id="bg"/>
+        </g>
+    </g>
+</symbol><symbol id="arrow-right" viewBox="0 0 7 10">
+<style type="text/css">
+	.st0{fill:#00576F;}
+</style>
+<polygon id="WH-arrow" class="st0" points="0,8.3 4.7,5 0,1.7 0,0 2.3,1.7 7,5 2.3,8.3 0,10 "/>
+</symbol><symbol id="down-arrow" viewBox="0 0 11 8"><g transform="translate(0 -1)"><use fill="#00576f" xlink:href="#a"/></g></symbol><symbol id="play-button-white" viewBox="0 0 62 62"><g transform="translate(-90 -592)"><image width="62" height="62" transform="translate(90 592)" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD4AAAA+CAYAAABzwahEAAAEoklEQVRoQ+WbXWgdRRTHf6cNptrWNo2IFiVVawOKKX4lNBG/Y1ExL0oq1RZBKWhVrG0FNWpFwQdBRRHBDxSigqIvipbim9SKLViqTxaLPqsFxScFHfmvs3Gz2Zu9d+/OvRt3YR+Su3PO/ObMnnPm7IwR8HLOrQAuB4aAQX+fCiz3t7T/7u+fgO/8/Q3wuZn9Fqp7VrZg59w5wBbgBuAiYHFBHX8BXwOfAtNmdqygnMxmpYA75wS3CdgOjCY0OaCojnTbA8DLwHtmpkFp6yraqUipB74DeBiQpaN/twHbCCYpU5Z/BnirnQEoDO6cGwFeAS5sa+iLNz4M3G1mXxUR0TK4t/KzwAMBLNsqg2bCC8DuVq3fErhzbiXwPjAeaEoXARfDZ8Ckmf3arICmwZ1zCkcfAesqAh0zxu//UWDCzBQSc6+mwJ1zG+VNAcXlKl+K+5vMbF9eJ3PBPfQnbcTjvD6U/btC3Y158POC++ktr1l1S6cHT5YfmW/aNwT3jkzQeqcX4qV3XvCZDi8T3Iesvd57L0TouM/y9tdnhbpG4M8BOyrmvVs1QOztnzezB9ON54D7jOxL/2Cu82u1Nx1+XvC6NqQzvFlgfoof6mIaGmpclN5empzyafA7gddDae+y3LvM7I24DzPg3trKeuJVVpf7Wbp6reoGY6snwTcD75SurloCbzOzd9WlJPgXqSJCtbpcTm8OmNnYDLgvF32/wMNX3tDE4W2tyliRxZ1ze4An8lr+T35/0sz2xOAH5e5Dgf189Bh9A2fQ09sbSkUrcg+Z2bD5EvBxYFGoisr+l17j2w8/5ppHdrDuuqta6WTZz2q6/w30C/wmX2AoW8mMPIHvf/HV6O81YyOMT+2kf+1ZwfQ1IXhC4FPAU008XPiRJLiELOrp4ZKtk4zdt43eZUsLy22j4ZTAp4Hb2xCS2zQNHjdY2r+KK3ffywU3a9J19Hpb4FpzD4dU2wg81rl6/fmMP/4Qpw+dF7IbSdkHBf6DXr2QGvPApdvMGLplgit2beekVX0huyPZPwr8F3m5kJqaAY/1L1m+jMvu38bFWyaxxUU/u+XSHBf4H8AJuY+28UAr4LGaU849m/HHdjGwIUh68WdlweMBGNx4dRT/T159WhtDP6dpBF6pqZ5Fd+LKFWz94E36Bs4sCz6a6pVwbo2IAlk8cm5dD2dZ0HrHr53ayZrRIJE2CmddS2CygOXVldEpswvo1acF/ijwdFkvT5acZry64rgyOGVyHYjjUcra0UVK1sB0IXOLFin6LhZ8WRqvzpLgytWVqSlj69D137JUCp1zQQsRWaszZWbK0LqwOvu3EOHBg5aeZq3HR4ejjKyL6/FZpSfV0oMVGytSgZlbbPRWD1ZerlDNbXZ52YPX9oOC1oD1+4TkrV6/j4YeXFav32diD6+tmvXaGBBnT865+m0FSUz5+m3+8fDat1qv7V6JKa/9q/Xa4JeA1z7Wem3pTMHXaxNvatrXa9t2Ar5+G/UT8Mru6nU0I1keqt1hnBS8rF+v41cZA3ArcE8tDtxlVUZrdcSyUWk4cah2vT9Qq9MO8x2q1akCFUOOhD5U+w+BC/griVLIPgAAAABJRU5ErkJggg=="/></g></symbol></svg>

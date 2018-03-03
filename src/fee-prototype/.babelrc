@@ -1,0 +1,11 @@
+{
+  "presets": [
+    "stage-0",
+    ["env", {
+      "targets": {
+        "browsers": ["> 5%", "ie >= 11"]
+      },
+      "debug": false
+    }]
+  ]
+}
