@@ -1,8 +1,11 @@
-﻿using Project.Heatmap.Services;
+﻿using Newtonsoft.Json;
+using Project.Heatmap.Services;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net;
 using System.Net.Http;
+using System.Text;
 using System.Web;
 using System.Web.Http;
 using System.Web.Mvc;
@@ -14,17 +17,19 @@ namespace Project.Heatmap.Controllers
         private HeatmapService HeatmapService = new HeatmapService();
 
         [System.Web.Http.HttpGet]
-        public HttpResponseMessage Get()
+        public string Get(string relativeUrl)
         {
-            HeatmapService.GetEvents();
+            var datapoints = HeatmapService.GetDatapoints(relativeUrl);
 
-            return new HttpResponseMessage(System.Net.HttpStatusCode.OK);
+            var jsonContent = JsonConvert.SerializeObject(datapoints);
+
+            return jsonContent;
         }
 
         [System.Web.Http.HttpGet]
-        public HttpResponseMessage Push(int x, int y, int width)
+        public HttpResponseMessage Push(string relativeUrl, int x, int y, int width)
         {
-            HeatmapService.SaveDataPoint(x, y, width);
+            HeatmapService.SaveDatapoint(relativeUrl, x, y, width);
             return new HttpResponseMessage(System.Net.HttpStatusCode.OK);
         }
     }

@@ -1,5 +1,4 @@
-﻿using Project.Heatmap.Events;
-using Sitecore.XConnect;
+﻿using Sitecore.XConnect;
 using Sitecore.XConnect.Client;
 using Sitecore.XConnect.Collection.Model;
 using System;

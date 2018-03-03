@@ -1,4 +1,6 @@
-﻿using Project.Heatmap.Events;
+﻿using Project.Hackathon.Website.DataLayer;
+using Project.Hackathon.Website.Models;
+using Project.Hackathon.Website.Repositories;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -8,34 +10,44 @@ namespace Project.Heatmap.Services
 {
     public class HeatmapService
     {
-        private XConnectService XConnectService { get; set; }
-        private XdbService XdbService { get; set; }
+        private GenericRepository<HeatmapDatapoint> HeatmapRepo { get; set; }
 
         public HeatmapService()
         {
-            XConnectService = new XConnectService();
-            XdbService = new XdbService();
+            HeatmapRepo = new GenericRepository<HeatmapDatapoint>();
         }
 
-        public void GetEvents()
+        public List<DatapointModel> GetDatapoints(string relativeUrl)
         {
-            XdbService.GetAllEvents();
+            var result = new List<DatapointModel>();
+
+            var rawDatapoints = HeatmapRepo.GetAll(h => h.RelativeUrl == relativeUrl);
+
+            foreach(var point in rawDatapoints)
+            {
+                result.Add(new DatapointModel()
+                {
+                    X = point.X,
+                    Y = point.Y,
+                    Value = 1
+                });
+            }
+
+            return result;
         }
 
-        public void SaveDataPoint(int x, int y, int width)
+        public void SaveDatapoint(string relativeUrl, int x, int y, int width)
         {
-            // Get contact from Sitecore tracker
-            //var contact = XdbService.GetContact();
-
-            //// If the contact is null, don't go any further, xdb tracker is probably off
-            //if (contact == null)
-            //    return;
-
-            XdbService.AddEvent(x, y, width);           
-
+            var heatmapDatapoint = new HeatmapDatapoint()
+            {
+                DateTime = DateTime.UtcNow,
+                RelativeUrl = relativeUrl,
+                X = x,
+                Y = y,
+                Width = width
+            };
+            HeatmapRepo.Insert(heatmapDatapoint);
         }
-
-        // read interactions with filtering
 
 
     }
