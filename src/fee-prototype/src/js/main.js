@@ -1,12 +1,13 @@
-var isHeatMapMode = false;
 const HEAT_MAP_POINT_KEY = 'heatMapPoints';
 var points = [];
 
 //Add in the heatmap js if the querystring calls for it
 if(window.location.search.includes('heatmap')){
-  isHeatMapMode = true;
   //Pull in the heatmap script
   var heatMapScript = document.createElement('script');
+  heatMapScript.onload = function () {
+    showHeatMap();
+  };
   heatMapScript.src = '/js/heatmap.min.js';
   document.head.appendChild(heatMapScript);
 }
@@ -34,8 +35,8 @@ document.addEventListener('click', function(event){
     (new Image()).src = 'trackingpixel/pixel.png?x=' + x + '&y=' + y + '&width=' + width;
 }, false);
 
-//Using a click on the logo to launch the heatmap overlay
-document.getElementsByClassName('header__logo')[0].addEventListener('click', function(e){
+//Displays the heatmap overlay
+function showHeatMap(){
   var heatmap = h337.create({
     container: document.documentElement
   });
@@ -45,6 +46,10 @@ document.getElementsByClassName('header__logo')[0].addEventListener('click', fun
     max: 1,
     data: JSON.parse(sessionStorage.getItem(HEAT_MAP_POINT_KEY))
   });
+}
 
+//Using a click on the logo to launch the heatmap overlay
+document.getElementsByClassName('header__logo')[0].addEventListener('click', function(e){
+  this.showHeatMap();
   return false;
 });
