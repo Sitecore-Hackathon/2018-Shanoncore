@@ -8,7 +8,7 @@ if(window.location.search.includes('heatmap')){
   heatMapScript.onload = function () {
     showHeatMap();
   };
-  heatMapScript.src = '/js/heatmap.min.js';
+  heatMapScript.src = 'heatmap.min.js';
   document.head.appendChild(heatMapScript);
 }
 
@@ -42,7 +42,7 @@ function showHeatMap(){
   });
 
   //Get the points first from the external source
-  fetch('/js/datapoints.js').then(function(response){
+  fetch('datapoints.js').then(function(response){
     return response.json();
   }).then(function(pointData) {
     console.log(pointData);
@@ -55,8 +55,8 @@ function showHeatMap(){
   });
 }
 
-//Using a click on the logo to launch the heatmap overlay
-document.getElementsByClassName('header__logo')[0].addEventListener('click', function(e){
-  this.showHeatMap();
-  return false;
-});
+// //Using a click on the logo to launch the heatmap overlay
+// document.getElementsByClassName('header__logo')[0].addEventListener('click', function(e){
+//   this.showHeatMap();
+//   return false;
+// });
