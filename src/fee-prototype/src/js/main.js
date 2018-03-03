@@ -11,6 +11,7 @@ if(window.location.search.includes('heatmap')){
   document.head.appendChild(heatMapScript);
 }
 
+//global click event handler
 document.addEventListener('click', function(event){
   var x = event.clientX,
       y = event.clientY,
@@ -33,6 +34,7 @@ document.addEventListener('click', function(event){
     (new Image()).src = 'trackingpixel/pixel.png?x=' + x + '&y=' + y + '&width=' + width;
 }, false);
 
+//Using a click on the logo to launch the heatmap overlay
 document.getElementsByClassName('header__logo')[0].addEventListener('click', function(e){
   var heatmap = h337.create({
     container: document.documentElement
