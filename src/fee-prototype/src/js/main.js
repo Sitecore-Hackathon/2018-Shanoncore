@@ -41,10 +41,17 @@ function showHeatMap(){
     container: document.documentElement
   });
 
-  heatmap.setData({
-    min: 0,
-    max: 1,
-    data: JSON.parse(sessionStorage.getItem(HEAT_MAP_POINT_KEY))
+  //Get the points first from the external source
+  fetch('/js/datapoints.js').then(function(response){
+    return response.json();
+  }).then(function(pointData) {
+    console.log(pointData);
+    //Display the overlay with the points data from XDB
+    heatmap.setData({
+      min: 0,
+      max: 1,
+      data: pointData
+    });
   });
 }
 
