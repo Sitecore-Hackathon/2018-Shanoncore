@@ -15,7 +15,7 @@
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Project.Hackathon.Website</RootNamespace>
-    <AssemblyName>Project.Hackathon.Website</AssemblyName>
+    <AssemblyName>Project.Heatmap</AssemblyName>
     <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
     <UseIISExpress>true</UseIISExpress>
     <Use64BitIISExpress />
@@ -331,16 +331,18 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Config\Include\Heatmap.CustomEvents.config" />
     <None Include="Properties\PublishProfiles\FolderProfile.pubxml" />
     <None Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Controllers\HeatmapController.cs" />
-    <Compile Include="Controllers\HeatmapDataPointController.cs" />
-    <Compile Include="Models\ClientInteraction.cs" />
+    <Compile Include="Events\HeatmapEvent.cs" />
+    <Compile Include="Events\ConvertHeatmapEvent.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Services\HeatmapService.cs" />
     <Compile Include="Services\XConnectService.cs" />
+    <Compile Include="Services\XdbService.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
@@ -352,7 +354,8 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="App_Config\Include\" />
+    <Folder Include="Helpers\" />
+    <Folder Include="Models\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
