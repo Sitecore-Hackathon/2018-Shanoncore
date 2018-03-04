@@ -25,11 +25,3 @@ Going forward this data could be utlized to perform A/B testing as well as provi
 
   ### Module Sitecore Hackathon Category
   - XConnect
-## Screenshots
-  (Peter or David to give me some screenshots)
-
-- Create a 2 – 10 minutes video explaining the module’s functionality (A link to youtube video)
-
-  - What problem was solved
-  - How did you solve it
-  - What is the end result
