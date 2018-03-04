@@ -21,7 +21,7 @@ Going forward this data could be utlized to perform A/B testing as well as provi
   ### Module Purpose
   - To utilize XDB and XConnect to store and categorize user click data and display that data as a heatmap overlay on a page
 
-![Overview](images/overview.png)
+![Overview](overview.png)
 
   ### Module Sitecore Hackathon Category
   - XConnect
