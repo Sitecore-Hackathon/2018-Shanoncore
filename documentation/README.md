@@ -1,71 +1,32 @@
-# Documentation
+# Sitecore Hack-a-thon 2018
+# Team Shanoncore
 
-The documentation for this years Hackathon must be provided as a readme in Markdown format as part of your submission. 
 
-You can find a very good reference to Github flavoured markdown reference in [this cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet). If you want something a bit more WYSIWYG for editing then could use [StackEdit](https://stackedit.io/app) which provides a more user friendly interface for generating the Markdown code. Those of you who are [VS Code fans](https://code.visualstudio.com/docs/languages/markdown#_markdown-preview) can edit/preview directly in that interface too.
+## Project Overview
 
-Examples of things to include are the following.
+Utilize the power of Sitecore 9 and XConnect/xDB to develop a heat mapping view of customer click interactions inside the Sitecore Experience Editor
 
-## Summary
+Going forward this data could be utlized to perform A/B testing as well as providing personalized click tracking visualization for certain segment of Sitecore users, to understand how different user classifications are using the site.
 
-**Category:** Hackathon Category
 
-What is the purpose of your module? What problem does it solve and how does it do that?
+- Sitecore 9.0 Update 1 Module (Module install package)
+   - An installation Sitecore Package (`.zip` or `.update`)
+   Peter or David (TBD)
 
-## Pre-requisites
 
-Does your module rely on other Sitecore modules or frameworks?
 
-- List any dependencies
-- Or other modules that must be installed
-- Or services that must be enabled/configured
+## Module Documentation
 
-## Installation
+- Precise and Clear Installation Instructions document (1 – 2 pages) (Peter or David)
+  ### Module Purpose
+  - To utilize XDB and XConnect to store and categorize user click data and display that data as a heatmap overlay on a page
+  ### Module Sitecore Hackathon Category
+  - XConnect
+## Screenshots
+  (Peter or David to give me some screenshots)
 
-Provide detailed instructions on how to install the module, and include screenshots where necessary.
+- Create a 2 – 10 minutes video explaining the module’s functionality (A link to youtube video)
 
-1. Use the Sitecore Installation wizard to install the [package](#link-to-package)
-2. ???
-3. Profit
-
-## Configuration
-
-How do you configure your module once it is installed? Are there items that need to be updated with settings, or maybe config files need to have keys updated?
-
-Remember you are using Markdown, you can provide code samples too:
-
-```xml
-<?xml version="1.0"?>
-<!--
-  Purpose: Configuration settings for my hackathon module
--->
-<configuration xmlns:patch="http://www.sitecore.net/xmlconfig/">
-  <sitecore>
-    <settings>
-      <setting name="MyModule.Setting" value="Hackathon" />
-    </settings>
-  </sitecore>
-</configuration>
-```
-
-## Usage
-
-Provide documentation  about your module, how do the users use your module, where are things located, what do icons mean, are there any secret shortcuts etc.
-
-Please include screenshots where necessary. You can add images to the `./images` folder and then link to them from your documentation:
-
-![Hackathon Logo](images/hackathon.png?raw=true "Hackathon Logo")
-
-You can embed images of different formats too:
-
-![Deal With It](images/deal-with-it.gif?raw=true "Deal With It")
-
-And you can embed external images too:
-
-![Random](https://placeimg.com/480/240/any "Random")
-
-## Video
-
-Please provide a video highlighing your Hackathon module submission and provide a link to the video. Either a [direct link](https://www.youtube.com/watch?v=EpNhxW4pNKk) to the video, upload it to this documentation folder or maybe upload it to Youtube...
-
-[![Sitecore Hackathon Video Embedding Alt Text](https://img.youtube.com/vi/EpNhxW4pNKk/0.jpg)](https://www.youtube.com/watch?v=EpNhxW4pNKk)
+  - What problem was solved
+  - How did you solve it
+  - What is the end result
