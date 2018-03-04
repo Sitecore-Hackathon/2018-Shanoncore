@@ -400,6 +400,9 @@
       <DependentUpon>HeatmapModel.edmx</DependentUpon>
       <LastGenOutput>HeatmapModel.cs</LastGenOutput>
     </Content>
+    <Content Include="js\heatmap.min.js" />
+    <Content Include="js\main.js" />
+    <Content Include="sitecore\shell\client\Sitecore\ExperienceEditor\Commands\HeatMapMenu.js" />
     <Content Include="Sql\schema.sql" />
   </ItemGroup>
   <ItemGroup>
